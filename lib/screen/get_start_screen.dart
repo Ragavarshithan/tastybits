@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tastybits/screen/auth/signIn.dart';
 import 'package:tastybits/screen/home_screen.dart';
 
 class GetStartScreen extends StatelessWidget {
@@ -42,7 +43,7 @@ class GetStartScreen extends StatelessWidget {
                     ),
                       onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                        MaterialPageRoute(builder: (context) => SigninScreen()));
                   })
             ],
           ),

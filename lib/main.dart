@@ -15,14 +15,17 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (BuildContext context, Widget? child){
-        return MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
+        return ScreenUtilInit(
+          designSize: const Size(375, 812),
+          child: MaterialApp(
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              useMaterial3: true,
+            ),
+            home: SplashScreen(),
+            debugShowCheckedModeBanner: false,
           ),
-          home: SplashScreen(),
-          debugShowCheckedModeBanner: false,
         );
       }
     );
