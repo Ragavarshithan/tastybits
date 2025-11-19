@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tastybits/screen/root.dart';
 import 'package:tastybits/screen/splash_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),
-            home: SplashScreen(),
+            home: RootScreen(),
             debugShowCheckedModeBanner: false,
           ),
         );
